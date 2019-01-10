@@ -34,11 +34,6 @@ nav {
     justify-content: 
 }
 
-#showcase-container {
-    /*grid-column: 1 / 3;
-    grid-row: 3 / 4;*/
-}
-
 /* Nav bar */
 
  #ul-nav {
@@ -125,12 +120,12 @@ nav li:hover {
 
 /* Show case area */
 
-.showcase-container {
-    /*display: flex;
+.showcase {
+    display: flex;
     justify-content: center;
-    flex-direction: row;*/
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
+    flex-direction: row;
+    /*grid-column: 1 / 4;
+    grid-row: 3 / 4;*/
 }
 
 .showcase {
@@ -150,7 +145,7 @@ nav li:hover {
 
 .showcase p {
     font-size: 26px;
-    text-align: center;
+    text-align: left;
     padding: 20px 5px;
 }
 
@@ -158,9 +153,9 @@ nav li:hover {
     list-style: none;
     text-decoration: none;
 
-   /* display: flex;
+    display: flex;
     justify-content: center;
-    flex-direction: row; */
+    flex-direction: row;
 }
 
 .showcase ul li {
@@ -185,12 +180,6 @@ nav li:hover {
 
 /* Portfolio projects */
 
-.showcase-container{
-   /* width: 100%;
-    height: 100%;
-    overflow: hidden;*/
-}
-
 .projects {
     color: white;
     z-index: 2;
@@ -203,13 +192,66 @@ nav li:hover {
      flex-wrap: wrap;
      width: 25%;
      height: 400px;
-     padding: 20px;
+     padding: 0px;
      position: relative;
      border: 2px solid #fff;
 }
 
+#project1 img {
+    width: 100%;
+    height: 100%;
+}
+
+#project2 img {
+    width: 100%;
+    height: 100%;
+}
+
+#project3 img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+#project4 img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+#project1::before {
+    content: 'Project 1 : PHOTO GALLERY';
+    position: absolute;
+    padding: 20px;
+    font-size: 18px;
+}
+
+#project2::before {
+    content: 'Project 2 : COFFEE CLUB';
+    position: absolute;
+    padding: 20px;
+    font-size: 18px;
+}
+
+#project3::before {
+    content: 'Project 3 : CALCULATOR APP';
+    color: #000;
+    position: absolute;
+    padding: 20px;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+}
+
+#project4::before {
+    content: 'Project 4 : TBC';
+    position: absolute;
+    padding: 20px;
+    font-size: 18px;
+}
 
 /* Footer - Social media */
+
 footer {
     grid-column: 1 / 4;
     grid-row: 4 / 5;
